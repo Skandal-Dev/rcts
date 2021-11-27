@@ -1,0 +1,444 @@
+    .App {
+        text-align: center;
+    }
+    
+    .App-logo {
+        height: 45vmin;
+        pointer-events: none;
+    }
+    
+    .App-header {
+        background-color: hsl(41, 23%, 19%);
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        font-size: calc(10px + 2vmin);
+        color: white;
+    }
+    
+    a {
+        color: #61dafb;
+        text-decoration: dashed;
+    }
+    
+    .note {
+        position: relative;
+        background: rgb(246, 246, 246);
+        box-shadow: hsla(0, 0%, 42%, 0.171) 0px 0px 5px;
+        /*padding: 0.5rem 0rem;*/
+        border-radius: 0rem 0.4rem 0.4rem 0;
+        color: #555;
+        margin: 2.5rem 0.5rem;
+        /*background-color: white;
+        background-image: linear-gradient(90deg, transparent 10%, rgb(233, 35, 173) 23px, transparent 24px), linear-gradient(transparent 5px, rgba(220, 220, 200, .3) 6px, transparent 6px, transparent 11px, rgba(220, 220, 200, .3) 12px, transparent 12px, transparent 17px, rgba(220, 220, 200, .3) 18px, transparent 18px, transparent 23px, rgba(220, 220, 200, .8) 24px, transparent 24px), linear-gradient(90deg, transparent 23px, rgba(220, 220, 200, .8) 24px, transparent 24px);
+        background-size: 100% 24px, 100% 24px, 24px 100%;*/
+        padding-left: 20px;
+        padding-top: 40px;
+        line-height: 60px;
+        background-image: -moz-linear-gradient(top, transparent, transparent 56px, #E7EFF8 0px);
+        background-size: 100% 60px;
+    }
+    
+    .note-header {
+        padding: 1.5rem 1.5rem;
+        padding-top: 30px;
+        margin-bottom: 45px;
+        margin-left: 15px;
+    }
+    
+    .note-body {
+        margin-top: 0.4rem;
+        margin-left: 20px;
+        font-size: calc(10px + 1.5vmin);
+    }
+    
+    .note-body p {
+        text-align: justify;
+        padding: 0 1.5rem;
+    }
+    
+    .signature {
+        text-align: right !important;
+        padding: 0;
+        margin-top: 48px;
+        margin-right: 20px;
+        font-family: 'Dokdo', cursive !important;
+        font-size: calc(20px + 2.2vmin);
+    }
+    
+    .title {
+        /*font-family: 'Cinzel Decorative', cursive;*/
+        font-size: 3vmin;
+    }
+    
+    .t-right {
+        text-align: right !important;
+    }
+    
+    .t-left {
+        text-align: left !important;
+    }
+    
+    .stack {
+        font-family: 'Short Stack' !important;
+    }
+    
+    .handlee {
+        font-family: 'Handlee' !important;
+    }
+    
+    .apple {
+        font-family: 'Homemade Apple' !important;
+        color: #404a80;
+    }
+    
+    .btn,
+    textarea {
+        background: none !important;
+        border: none !important;
+        color: #333;
+        font-size: 1.5rem !important;
+        outline: none !important;
+    }
+    
+    .btn {
+        font-family: 'Handlee' !important;
+    }
+    
+    .btn:hover {
+        color: #999;
+    }
+    
+    .marge {
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 52px;
+        border-right: 3px solid rgba(233, 52, 112, 0.253);
+    }
+    
+    @import url("https://fonts.googleapis.com/css?family=Inconsolata:400,700");
+    .module {
+        box-sizing: border-box;
+        border-radius: 4px;
+        box-shadow: hsla(0, 0%, 42%, 0.25) -2px -2px 25px 5px;
+        width: 72rem;
+    }
+    
+    .module .module-header {
+        width: 100%;
+        overflow: auto;
+        background-color: white;
+        padding: 5px 8px;
+    }
+    
+    .module .module-header .box-label {
+        float: left;
+        margin-left: 6px;
+    }
+    
+    .module .module-header .box-label .file-name {
+        font-size: 15px;
+        line-height: 15px;
+        color: #848f9d;
+    }
+    
+    .module .module-header .box-button {
+        display: flex;
+        float: right;
+        margin-right: 17px;
+    }
+    
+    .module .module-header .box-button .button {
+        background: #ff7979;
+        width: 13px;
+        height: 13px;
+        border-radius: 100%;
+        margin: 5px 2px;
+        cursor: pointer;
+    }
+    
+    .module .module-header .box-button .button.red {
+        background: #ff7979;
+    }
+    
+    .module .module-header .box-button .button.orange {
+        background: #ffbe76;
+    }
+    
+    .module .module-header .box-button .button.green {
+        background: #badc58;
+    }
+    
+    .module .module-body {
+        position: relative;
+        background: #46637f;
+        margin-bottom: 35px;
+    }
+    
+    .module .module-body .text-label {
+        position: absolute;
+        bottom: 8px;
+        right: 8px;
+        padding: 2px 8px;
+        border-radius: 2px;
+        background: #34495e;
+        color: rgba(218, 226, 234, 0.6);
+        font-weight: bold;
+    }
+    
+    .module .module-body .text-area {
+        padding: 10px;
+    }
+    
+    .module .module-body code {
+        color: white;
+        font-family: Inconsolata;
+        padding: 5px;
+        font-weight: bold;
+        text-align: justify !important;
+    }
+    
+    .woaw {
+        padding: 1.25px 5px;
+        background-color: #333;
+        border-radius: 1px;
+    }
+    
+    .OutfitManager {
+        padding: 20px;
+    }
+    
+    .layout-cube {
+        display: inline-flex;
+        justify-content: space-between;
+        width: 100%;
+    }
+    
+    .cube {
+        background-color: #0a06154f;
+        border-radius: 6px;
+        width: 125px;
+        overflow: hidden;
+        margin: 0.5vw 0;
+        box-shadow: rgb(45, 60, 85) 3px -1px 0px 1px;
+        border: 2px solid #ffffff08;
+    }
+    
+    .cube:hover {}
+    
+    .cube-info {
+        background-color: hsla(262, 100%, 5.9%, 0.13);
+        text-align: right;
+        padding-right: 12px;
+        font-size: 18px;
+        height: 30px;
+        line-height: 30px;
+        color: #aeaeae;
+        border-bottom: 2px solid #1c1d1e29;
+    }
+    
+    .cube-content {
+        height: 150px;
+        border-left: 2px solid #2a364b8c;
+        border-bottom: 2px solid #2a364b8c;
+    }
+    
+    .clothes {
+        margin-top: 5px;
+    }
+    
+    .clothes>div {
+        margin-bottom: 2px !important;
+        background: #0000001c !important;
+        border: 1px solid rgba(187, 168, 168, 0.2);
+    }
+    
+    .clothes-upper {
+        width: 60px;
+        height: 35px;
+        background: #333;
+        margin: auto !important;
+    }
+    
+    .clothes-jeans {
+        width: 60px;
+        height: 35px;
+        background: #333;
+        margin: auto !important;
+    }
+    
+    .clothes-middle {
+        width: 60px;
+        height: 35px;
+        background: #333;
+        margin: auto !important;
+    }
+    
+    .clothes-foot {
+        width: 60px;
+        height: 35px;
+        background: #333;
+        margin: auto !important;
+    }
+    
+    .viewer {
+        width: 100% !important;
+        box-shadow: rgb(45, 60, 85) 3px -1px 0px 1px;
+        border: 2px solid #ffffff08;
+        background-color: #0a06154f;
+        border-radius: 6px;
+    }
+    
+    .viewer>.cube-content {
+        min-height: 500px;
+        overflow: auto;
+    }
+    
+    .border {
+        border: 1px solid pink;
+    }
+    
+    .item-layout {
+        padding: 10px 5px;
+        clear: both;
+    }
+    
+    .item-layout ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        width: 100%;
+    }
+    
+    .item-layout h2 {
+        font-size: 13px;
+        margin-left: 5px;
+        margin-bottom: 5px;
+        color: rgba(250, 235, 215, 0.561);
+    }
+    
+    .item-layout li {
+        width: 64px;
+        height: 64px;
+        background: rgba(54, 45, 45, 0.16);
+        margin: 5px;
+        border-radius: 3px;
+        border: 1px solid #a2a4ca69;
+        box-shadow: inset 0px 0px 5px #09072f80;
+        float: left;
+        cursor: pointer;
+    }
+    
+    .item-layout li:hover {
+        box-shadow: inset 0px 0px 25px #09072f80;
+    }
+    
+    .item-layout li.active {
+        border: 1px solid rgba(113, 152, 244, 0.6) !important;
+        background: rgba(113, 152, 244, 0.07) !important;
+    }
+    
+    .drop-img {
+        padding: 0;
+        margin: auto;
+        width: 64px;
+        height: 64px;
+        transform: scale(75%);
+    }
+    
+    .viewer .box-button {
+        display: inline-flex;
+        text-align: left;
+        float: left;
+        overflow: hidden;
+        line-height: 20px;
+        padding-left: 8px;
+        box-shadow: inset -1px 0px 5px #161344;
+        border-right: 2px solid #394b63;
+        text-align: center !important;
+    }
+    
+    .p-b {
+        padding-bottom: 10px !important;
+    }
+    
+    #OutfitLive .cube-content {
+        background: rgb(36, 49, 70);
+        box-shadow: inset 0px 0px 5px #09072f59;
+    }
+    
+    .cube-info .active {}
+    
+    .cube-info .active::before {
+        content: '> '
+    }
+    
+    .cube-info .active::after {
+        content: ' <';
+    }
+    
+    .btn-sm {
+        cursor: pointer;
+    }
+    
+    #ToDoList {
+        width: 80% !important;
+        height: 800px !important;
+        background-color: rgb(255, 220, 154) !important;
+        margin: 50px auto !important;
+        border-radius: 4px;
+        background-image: -moz-linear-gradient(top, transparent, transparent 56px, #EEC39475 0px);
+        background-size: 100% 60px;
+    }
+    
+    #ToDoList>ul {
+        list-style: none;
+        padding: 0;
+        margin: 18px 18px;
+        overflow: hidden;
+    }
+    
+    #ToDoList>ul>li {
+        line-height: 60px;
+    }
+    
+    .content-check {
+        display: block;
+        position: relative;
+        margin: 0;
+        padding: 0;
+    }
+    
+    .content-check p {
+        margin: 0;
+        padding: 0 10px;
+        display: block;
+        margin-left: 50px;
+        color: #936f49;
+        font-weight: bold;
+    }
+    
+    .content-check input[type="checkbox"] {
+        position: absolute;
+        left: 20px;
+        top: 23px;
+        line-height: 70px;
+        margin: 0;
+        padding: 0;
+        transform: scale(2.8);
+        opacity: 0.5;
+        cursor: pointer;
+    }
+    
+    .content-value {
+        line-height: 60px;
+        background-color: transparent;
+        border: none;
+        outline: none;
+        min-height: 70px !important;
+        resize: none;
+    }
